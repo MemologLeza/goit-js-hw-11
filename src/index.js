@@ -58,8 +58,8 @@ async function generateArticlesMarkup() {
       loadMoreBtn.hide();
     }
 
-    if (hits.length <40) Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.");
-
+    if (hits.length <40 & hits.length !=0) Notiflix.Notify.failure("We're sorry, but you've reached the end of search results.");
+    if (hits.length ===0) Notiflix.Notify.failure("Sorry, there are no images matching your search query. Please try again.");
     return hits.reduce(
       (markup, currentImg) => markup + createMarkup(currentImg),
       ""
