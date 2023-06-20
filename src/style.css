@@ -1,0 +1,31 @@
+.search-form {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+.isHidden {
+  display: none;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.info {
+  display: flex;
+  gap: 20px;
+}
+.img {
+  max-width: 300px;
+}
+.load-more {
+  margin: 0 auto;
+}
+.noHidden {
+  display: block;
+}
